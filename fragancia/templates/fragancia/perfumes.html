@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfumeria</title>
+  <title>Formulario de Perfume</title>
 </head>
 <body>
-  <h1>Bienvenidos a todos</h1>
-  <h3>Perfumes comprados: </h3>
-  <ul>
-    {% for perfumes in Perfume %}
-    <li>{{perfumes}}</li>
-    {% endfor %}
-  </ul>
+    <h1>Formulario de Perfume</h1>
+    <form method="post" novalidate>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Guardar">
+    </form>
 </body>
 </html>
 
