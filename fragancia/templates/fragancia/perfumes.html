@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Perfumeria</title>
 </head>
 <body>
   <h1>Bienvenidos a todos</h1>
   <h3>Perfumes comprados: </h3>
   <ul>
-  {% for Perfume in perfumes %}
-    <li>{{Perfume}}</li>
-  {% endfor %}
+    {% for perfumes in Perfume %}
+    <li>{{perfumes}}</li>
+    {% endfor %}
   </ul>
 </body>
 </html>

@@ -55,7 +55,9 @@ ROOT_URLCONF = 'PERFUMES.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR/ "templates/fragancia/"
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
