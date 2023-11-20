@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PERFUMES</title>
+</head>
+<body>
+    <h1>Formulario de Perfume</h1>
+    <form method="post" novalidate>
+        <table> 
+        {% csrf_token %}
+        {{ form.as_div}}
+        <input type="submit" value="Crear">
+        </table>
+        <input type="submit" value="Guardar">
+    </form>
+    <h1>Formulario de Cliente</h1>
+    <form method="post" novalidate>
+        <table> 
+        {% csrf_token %}
+        {{ form.as_div}}
+        <input type="submit" value="Crear">
+        </table>
+        <input type="submit" value="Guardar">
+    </form>
+    <h1>Formulario de Compra</h1>
+    <form method="post" novalidate>
+        <table> 
+        {% csrf_token %}
+        {{ form.as_div}}
+        <input type="submit" value="Crear">
+        </table>
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>
