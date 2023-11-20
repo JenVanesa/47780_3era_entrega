@@ -133,18 +133,18 @@ class ClienteCreateView(CreateView):
     model = Cliente
     form_class = ClienteForm
     template_name = 'fragancia/perfumes.html'
-    success_url = '/clientes/'
+    success_url = '/fragancia/clientes/'
 
 class ClienteUpdateView(UpdateView):
     model = Cliente
     form_class = ClienteForm
     template_name = 'fragancia/perfumes.html'
-    success_url = '/clientes/'
+    success_url = '/fragancia/clientes/'
 
 class ClienteDeleteView(DeleteView):
     model = Cliente
     template_name = 'fragancia/perfumes.html'
-    success_url = '/clientes/'
+    success_url = '/fragancia/clientes/'
 
 # Compra views
 class CompraListView(ListView):
@@ -161,15 +161,15 @@ class CompraCreateView(CreateView):
     model = Compra
     form_class = CompraForm
     template_name = 'fragancia/perfumes.html'
-    success_url = '/compras/'
+    success_url = '/fragancia/compras/'
 
 class CompraUpdateView(UpdateView):
     model = Compra
     form_class = CompraForm
     template_name = 'fragancia/perfumes.html'
-    success_url = '/compras/'
+    success_url = '/fragancia/compras/'
 
 class CompraDeleteView(DeleteView):
     model = Compra
     template_name = 'fragancia/perfumes.html'
-    success_url = '/compras/'
+    success_url = '/fragancia/compras/'
