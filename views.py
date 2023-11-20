@@ -111,12 +111,12 @@ class PerfumeUpdateView(UpdateView):
     model = Perfume
     form_class = PerfumeForm
     template_name = 'fragancia/perfumes.html'
-    success_url = '/perfumes/'
+    success_url = '/fragancia/perfumes/'
 
 class PerfumeDeleteView(DeleteView):
     model = Perfume
     template_name = 'fragancia/perfumes.html'
-    success_url = '/perfumes/'
+    success_url = '/fragancia/perfumes/'
 
 # Cliente views
 class ClienteListView(ListView):
